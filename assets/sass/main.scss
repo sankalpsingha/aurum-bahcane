@@ -1,0 +1,290 @@
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%; /* Now 10px = 1rem! */
+}
+
+.container{
+    height: 100vh;
+    // background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    position: relative;
+
+}
+
+.mobile-view-text{
+    display: none;
+}
+
+.bahcane-logo {
+    position: absolute;
+    transform: translate(5%, -30%);
+    width: 30rem;
+
+}
+
+.bamboo-section {
+
+    // &:hover {
+    //     // background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.8)),url("/images/Mask\ Group\ 1.jpg");
+    //     background-size: 150%;
+    // }
+
+    // transition: .3s all;
+    
+    outline: none;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/images/Mask\ Group\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
+
+    height: 40vw;
+    width: 60vw;
+    font-family: "Gabriola", "Helvetica", serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem;
+
+
+
+    .side-border-left {
+        width: 30vw;
+        padding: 3rem;
+        border-top:    4px solid white;
+        border-left:  4px solid white; 
+        border-bottom: 4px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+    }
+
+
+    .main-text {
+        font-size: 3.8rem;
+        letter-spacing: .6rem;
+        font-weight: 300;
+        text-align: left;
+        white-space: nowrap;
+
+    }
+
+    .section-info {
+        font-size: 2.3rem;
+        letter-spacing: .5rem;
+        text-align: left;
+        padding-right: 1rem;
+        
+    }
+
+}
+
+.rattan-section {
+
+    outline:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/images/art-background-close-up-265009.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    width: 60vw;
+    font-family: "Gabriola", "Helvetica", serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem;
+
+
+   .side-border-right {
+        width: 30vw;
+        padding: 3rem;
+        border-top:    4px solid white;
+        border-right:  4px solid white; 
+        border-bottom: 4px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+   }
+
+    .main-text {
+        font-size: 3.8rem;
+        letter-spacing: .6rem;
+        font-weight: 300;
+        text-align: right;
+        white-space: nowrap;
+
+    }
+
+    .section-info {
+        font-size: 2.3rem;
+        letter-spacing: .5rem;
+        text-align: right;
+        padding-left: 1rem;
+       
+
+    }
+
+    
+}
+
+.btn-explore {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    border: 2px solid white;
+    margin-top: 2rem;
+    transition: .2s all;
+
+
+    &:hover {
+        background: white;
+        color: black;
+        transform: translate(5%, 5%);
+    }
+}
+
+
+
+/* Media Queries*/
+@media(max-width: 1800px){
+
+}
+
+@media(max-width: 1500px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 1200px){
+    .bahcane-logo {
+        width: 20rem;
+    }
+    html{
+        font-size: 47%;
+    }
+    .container{
+        padding: 0 5rem;
+    }
+    .bamboo-section{
+        .side-border-left{
+            width: 40vw;
+        }
+    }
+    .rattan-section{
+        .side-border-right{
+            width: 40vw;
+        }
+    }
+}
+
+@media(max-width: 900px){
+    html{
+        font-size: 45%;
+    }
+    .container{
+        flex-direction: column ;
+        padding: 0;
+    }
+    .bahcane-logo {
+        transform: translate(0%, 0%);
+    }
+    .bamboo-section{
+        width: 80vw !important ;
+        height: 45vh;
+        background-size: inherit;
+        .side-border-left {
+            border-top:    4px solid white;
+            border-left:  4px solid white; 
+            border-right: 4px solid white;
+            border-bottom: none;
+            width:62vw;
+            align-items: center;
+
+            .section-info {
+                text-align: center;
+            }
+        }
+    }
+    .rattan-section{
+        width: 80vw !important ;
+        height: 45vh;
+        background-size: cover;
+        .side-border-right {
+            border-top: none;
+            border-left:  4px solid white; 
+            border-right: 4px solid white;
+            border-bottom: 4px solid white;
+            width:62vw;
+            align-items: center;
+
+            .section-info {
+                text-align: center;
+            }
+        }
+    }
+
+
+}
+
+@media(max-width: 600px){
+    html{
+        font-size: 40%;
+    }
+    .main-text{
+        display: none;
+    }
+    .section-info {
+        display: none;
+    }
+    .mobile-view-text{
+        display: block;
+        letter-spacing: .6rem;
+        font-weight: 300;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 40%;
+    }
+    .main-text{
+        display: none;
+    }
+    .section-info {
+        display: none;
+    }
+    .mobile-view-text{
+        display: block;
+        letter-spacing: .6rem;
+        font-weight: 300;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 3rem;
+    }
+}
