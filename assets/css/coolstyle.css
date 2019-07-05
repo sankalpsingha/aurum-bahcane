@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box; }
 
+  @font-face {
+    font-family: "Gabriola";
+    src: url("../fonts/mainfont.ttf");
+    src: 
+    url("../fonts/mainfont.woff2") format("woff"),
+    }
+
 html {
   box-sizing: inherit;
   font-size: 62.5%;
