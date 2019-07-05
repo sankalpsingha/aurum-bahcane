@@ -12,8 +12,8 @@
      */
 
      @font-face {font-family: "Gabriola";
-      src: url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.eot"); /* IE9*/
-      src: url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      src: url("../fonts/gabriolla.eot"); /* IE9*/
+      src: url("../fonts/gabriollaiet.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
       url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.woff2") format("woff2"), /* chrome firefox */
       url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.woff") format("woff"), /* chrome firefox */
       url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
