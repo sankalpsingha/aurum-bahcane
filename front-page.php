@@ -14,7 +14,7 @@
     <div class="container">
             <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_300_inverted.png' ?>" class="bahcane-logo" alt="Bahcane Logo">
 
-        <div class="bamboo-section">
+        <div class="bamboo-section" style="font-family: 'Gabriola'">
                 <div class="side-border-left">
                         <h1 class="main-text">Exquisite Bamboo Products</h1>
                         <h1 class="mobile-view-text">Explore <br>Bamboo Products</h1>
