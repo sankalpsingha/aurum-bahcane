@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelectorAll('.btn-explore').forEach(link => link.addEventListener('click', (e) => {
         e.preventDefault();
+        // console.log();
         console.log('clicked.');
         anime.timeline({
             easing: 'easeOutExpo',
@@ -66,7 +67,8 @@ document.querySelectorAll('.btn-explore').forEach(link => link.addEventListener(
             offset: '-=700',
             complete() {
                 console.log('Animatiuon complete...');
-                window.location = "/cool";
+                // console.log(e.href);
+                window.location = e.srcElement.href;
             }
         });        
     })
