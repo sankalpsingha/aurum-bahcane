@@ -20,7 +20,7 @@
                         <h1 class="mobile-view-text">Explore <br>Bamboo Products</h1>
                         <p class="section-info">Explore our amazing and wonderful bamboo products.</p>
                         <p class="section-info">Come explore our wonderful collection.</p>
-                        <a href="https://bahcane.com/product-category/products/bamboo/" class="btn-explore">Explore</a>
+                        <a href="https://bahcane.com/bamboo-home/" class="btn-explore">Explore</a>
                 </div>
         </div>
 
@@ -32,7 +32,7 @@
                 <p class="section-info">Explore our amazing and wonderful rattan products.</p>
                 <p class="section-info">Come explore our wonderful collection.</p>
             </div>
-                <a href="https://bahcane.com/product-category/products/rattan/" class="btn-explore">Explore</a>
+                <a href="https://bahcane.com/rattan-home/" class="btn-explore">Explore</a>
            </div>
         </div>
     </div>
