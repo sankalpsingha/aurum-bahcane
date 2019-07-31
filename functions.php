@@ -22,3 +22,10 @@ add_action( 'wp_enqueue_scripts', 'aurum_enqueue_child_theme_scripts', 100 );
 
 // filters
 add_filter('wp_enqueue_scripts', 'bahcane_enqueue');
+
+
+function action_woocommerce_register_form_end() {
+	echo do_shortcode('[nextend_social_login]');
+}
+
+add_action('woocommerce_register_form_end', 'action_woocommerce_register_form_end');
