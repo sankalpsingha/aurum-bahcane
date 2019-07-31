@@ -29,3 +29,7 @@ function action_woocommerce_register_form_end() {
 }
 
 add_action('woocommerce_register_form_end', 'action_woocommerce_register_form_end');
+add_action('woocommerce_login_form_end', 'action_woocommerce_register_form_end');
+add_action('woocommerce_before_checkout_billing_form', 'action_woocommerce_register_form_end');
+add_action('woocommerce_edit_account_form_start', 'action_woocommerce_register_form_end');
+
